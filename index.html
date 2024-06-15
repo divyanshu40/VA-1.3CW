@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+ 
+</head>
+
+<body>
+
+<label for="feedbackTextArea">Enter the feedback:</label>
+<textarea id="feedbackTextArea" rows="4" cols="40"></textarea>
+  <button id="feedbackSubmitButton">Submit</button>
+  <p id="feedbackResult"></p>
+
+  <label for="addressTextArea">Enter your address:</label>
+  <textarea id="addressTextArea" rows="5" cols="50"></textarea>
+  <button id="displayAddressButton">Display Address</button>
+  <p id="displayAddress"></p>
+
+<label for="descriptionTextArea">Enter a Description:</label>
+  <textarea id="descriptionTextArea" rows="5" cols="50"></textarea>
+  <button id = "displayDescriptionButton">Display Description</button>
+  <p id="displayDescription"></p>
+  
+  <script>
+
+const feedbackTextArea = document.getElementById("feedbackTextArea")
+    const feedbackSubmitButton = document.getElementById("feedbackSubmitButton")
+    const feedbackResult = document.getElementById("feedbackResult")
+    feedbackSubmitButton.addEventListener("click" , function(){
+      feedbackResult.textContent = feedbackTextArea.value
+    })
+
+
+    const addressTextArea = document.getElementById("addressTextArea")
+    const displayAddressButton = document.getElementById("displayAddressButton")
+    const displayAddress = document.getElementById("displayAddress")
+    displayAddressButton.addEventListener("click" , function(){
+      displayAddress.textContent = addressTextArea.value
+    })
+
+
+    const descriptionTextArea = document.getElementById("description TextArea")
+    const displayDescriptionButton = document.getElementById("displayDescriptionButton")
+    const displayDescription = document.getElementById("displayDescription")
+    displayDescriptionButton.addEventListener("click" , function(){
+      displayDescription.textContent = descriptionTextArea.value
+    })
+
+    
+  </script>
+</body>
+
+</html>
